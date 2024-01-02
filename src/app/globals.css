@@ -1,0 +1,9 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(194, 226, 236);
+}
+
+div {
+  white-space: pre-wrap;
+}
