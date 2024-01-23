@@ -1,0 +1,43 @@
+[
+  {
+    "name": "T-Shirt",
+    "tile1": "Vorgeschlagenes Material:\n 99% Polyester 1% Elastane",
+    "tile2": {
+      "standardcase": {
+        "condition": "-",
+        "text": "Kann bis zu 25-30% aus recyceltem Fasern hergestellt werden"
+      },
+      "case1": {
+        "condition": "Recyclingfähigkeit >= 1 && <= 3",
+        "text": "Kann bis zu 15-20% aus recyceltem Fasern hergestellt werden"
+      },
+      "case2": {
+        "condition": "Recyclingfähigkeit > 3 && Strapazierfähigkeit > 3",
+        "text": "Kann bis zu 5-10% aus recyceltem Fasern hergestellt werden"
+      }
+    },
+    "tile3": "Verursacht Mikroplastik und ist nicht biologisch abbaubar.",
+    "tile4": "Wird beim Recycling zuerst zerkleinert und zu Plastikgranulat verarbeitet.",
+    "rules": { "rule1": "Recyclingfähigkeit > 5 ? True-Fall : False-Fall" }
+  },
+  {
+    "name": "Jacke",
+    "tile1": "Jacke Tile1",
+    "tile2": {
+      "standardcase": {
+        "condition": "-",
+        "text": "Jacke Tile2"
+      },
+      "case1": {
+        "condition": "Recyclingfähigkeit > 1",
+        "text": "Jacke Tile2 Case 1"
+      },
+      "case2": {
+        "condition": "Strapazierfähigkeit >= 3",
+        "text": "Jacke Tile2 Case 2"
+      }
+    },
+    "tile3": "Jacke Tile3",
+    "tile4": "Jacke Tile4"
+  }
+]
