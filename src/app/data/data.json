@@ -17,8 +17,7 @@
       }
     },
     "tile3": "Verursacht Mikroplastik und ist nicht biologisch abbaubar.",
-    "tile4": "Wird beim Recycling zuerst zerkleinert und zu Plastikgranulat verarbeitet.",
-    "rules": { "rule1": "Recyclingfähigkeit > 5 ? True-Fall : False-Fall" }
+    "tile4": "Wird beim Recycling zuerst zerkleinert und zu Plastikgranulat verarbeitet."
   },
   {
     "name": "Jacke",
