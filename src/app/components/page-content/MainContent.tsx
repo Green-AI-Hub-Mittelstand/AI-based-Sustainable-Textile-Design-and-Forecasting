@@ -7,31 +7,32 @@ import ShirtComponentTile2 from "../clothing/shirt/ShirtComponentTile2";
 import ShirtComponentTile3 from "../clothing/shirt/ShirtComponentTile3";
 import ShirtComponentTile4 from "../clothing/shirt/ShirtComponentTile4";
 
-import JacketComponentTile4 from "../clothing/jacket/JacketComponentTile4";
-import JacketComponentTile2 from "../clothing/jacket/JacketComponentTile2";
-import JacketComponentTile3 from "../clothing/jacket/JacketComponentTile3";
-import JacketComponentTile1 from "../clothing/jacket/JacketComponentTile1";
+import JeansComponentTile1 from "../clothing/jeans/JeansComponentTile1";
+import JeansComponentTile2 from "../clothing/jeans/JeansComponentTile2";
+import JeansComponentTile3 from "../clothing/jeans/JeansComponentTile3";
+import JeansComponentTile4 from "../clothing/jeans/JeansComponentTile4";
+import { IconButton, Tooltip } from "@mui/material";
+import InfoIcon from "@mui/icons-material/Info";
 
 const MainContent = () => {
   var data = require("../../data/data.json");
   const [shirtContentVisible, setShirtContentVisible] =
     useState<boolean>(false);
-  const [jacketContentVisible, setJacketContentVisible] =
+  const [jeansContentVisible, setJeansContentVisible] =
     useState<boolean>(false);
   const [dropdownClothing, setDropDownClothing] = useState<string>("T-Shirt");
   const [valueRecyclingfähigkeit, setValueRecyclingfähigkeit] =
     useState<number>(0);
-  const [valueStrapazierfähigkeit, setValueStrapazierfähigkeit] =
-    useState<number>(0);
-  const [valueFestigkeit, setValueFestigkeit] = useState<number>(0);
+  const [valueLanglebigkeit, setValueLanglebigkeit] = useState<number>(0);
+  const [valueRegenerativität, setValueRegenerativität] = useState<number>(0);
 
   useEffect(() => {
     dropdownClothing === "T-Shirt"
       ? setShirtContentVisible(true)
       : setShirtContentVisible(false);
-    dropdownClothing === "Jacke"
-      ? setJacketContentVisible(true)
-      : setJacketContentVisible(false);
+    dropdownClothing === "Jeans"
+      ? setJeansContentVisible(true)
+      : setJeansContentVisible(false);
     console.log(data);
   }, [dropdownClothing]);
 
@@ -45,12 +46,12 @@ const MainContent = () => {
     setValueRecyclingfähigkeit(e.target.value);
   };
 
-  const onChangeValueStrapazierfähigkeit = (e: any) => {
-    setValueStrapazierfähigkeit(e.target.value);
+  const onChangeValueLanglebigkeit = (e: any) => {
+    setValueLanglebigkeit(e.target.value);
   };
 
-  const onChangeValueFestigkeit = (e: any) => {
-    setValueFestigkeit(e.target.value);
+  const onChangeValueRegenerativität = (e: any) => {
+    setValueRegenerativität(e.target.value);
   };
 
   return (
@@ -62,18 +63,34 @@ const MainContent = () => {
             onChange={handleOnChangeDropdownClothing}
           >
             <option>{"T-Shirt"}</option>
-            <option>{"Jacke"}</option>
-            <option>{"Option 3"}</option>
+            <option>{"Jeans"}</option>
           </select>
         </div>
         <div></div>
-
         <div className="select is-fullwidth">
-          <select>
-            <option>{"Recyclingfähigkeit"}</option>
-            <option>{"Option 2"}</option>
-            <option>{"Option 3"}</option>
-          </select>
+          <div className="flex flex-row">
+            <div className="basis-1/12">
+              <Tooltip
+                title={[
+                  "1: Um ein neues Produkt herzustellen kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
+                  <br />,
+                  "2: Um ein neues Produkt herzustellen kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
+                  <br />,
+                  "3: Ein neu hergestelltes Kleidungsstück kann zu einem hohen Anteil oder komplett aus der recycelten Faser bestehen.",
+                ]}
+                placement="left"
+              >
+                <IconButton>
+                  <InfoIcon />
+                </IconButton>
+              </Tooltip>
+            </div>
+            <div className="basis-11/12">
+              <select>
+                <option>{"Recyclingfähigkeit"}</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div className="mt-1">
           <Slider
@@ -81,59 +98,96 @@ const MainContent = () => {
             value={valueRecyclingfähigkeit}
             onChange={onChangeValueRecycling}
             step={1}
-            min={0}
-            max={5}
-            marks={true}
-            valueLabelDisplay="on"
-          />
-        </div>
-
-        <div className="select is-fullwidth">
-          <select>
-            <option>{"Strapazierfähigkeit"}</option>
-            <option>{"Option 2"}</option>
-            <option>{"Option 3"}</option>
-          </select>
-        </div>
-        <div className="mt-1">
-          <Slider
-            aria-label="Always visible"
-            value={valueStrapazierfähigkeit}
-            onChange={onChangeValueStrapazierfähigkeit}
-            step={1}
-            min={0}
-            max={5}
+            min={1}
+            max={3}
             marks={true}
             valueLabelDisplay="on"
           />
         </div>
         <div className="select is-fullwidth">
-          <select>
-            <option>{"Festigkeit"}</option>
-            <option>{"Option 2"}</option>
-            <option>{"Option 3"}</option>
-          </select>
+          <div className="flex flex-row">
+            <div className="basis-1/12">
+              <Tooltip
+                title={[
+                  "1: Niedrige Langlebigkeit: Die erwartete Langlebigkeit des Kleidungsstücks ist sehr kurz, d.h. das Kleidungsstück muss auch bei vorgesehener Nutzung schnell Abnutzungserscheinungen auf. Dies führt zu einem schnellen Austauschen des Produkts.",
+                  <br />,
+                  "2: Erhöhte Langlebigkeit: Das Kleidungsstück hat eine mittlere erwartete Langlebigkeit, d.h. bei vorgesehener Nutzung weist das Kleidungsstück nach einiger Zeit Abnutzungserscheinungen auf, welche zum Austauschen des Produkts führen.",
+                  <br />,
+                  "3: Hohe Langlebigkeit: Das erwartete Langlebigkeit des Kleidungsstücks ist hoch, jedoch ist zu erwarten, dass es nach vielen Jahren vorgesehener Nutzung ausgetauscht werden muss.",
+                  <br />,
+                  "4: Sehr hohe Langlebigkeit (Hält bei normalem Gebrauch ein Leben lang) Die erwartete Langlebigkeit des Kleidungsstücks ist sehr lang, da keine oder nur sehr wenige Abnutzungserscheinungen zu erwarten sind.",
+                ]}
+                placement="left"
+              >
+                <IconButton>
+                  <InfoIcon />
+                </IconButton>
+              </Tooltip>
+            </div>
+            <div className="basis-11/12">
+              <select>
+                <option>{"Langlebigkeit"}</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div className="mt-1">
           <Slider
             aria-label="Always visible"
-            value={valueFestigkeit}
-            onChange={onChangeValueFestigkeit}
+            value={valueLanglebigkeit}
+            onChange={onChangeValueLanglebigkeit}
             step={1}
-            min={0}
-            max={5}
+            min={1}
+            max={4}
+            marks={true}
+            valueLabelDisplay="on"
+          />
+        </div>
+        <div className="select is-fullwidth">
+          <div className="flex flex-row">
+            <div className="basis-1/12">
+              <Tooltip
+                title={[
+                  "1: Die Ressourcen, welche zur Herstellung des Kleidungsstücks genutzt wurden sind nicht regenerativ.",
+                  <br />,
+                  "2: Nur ein Teil der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden sind regenerativ.",
+                  <br />,
+                  "3: 100% der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden, sind regenerativ.",
+                ]}
+                placement="left"
+              >
+                <IconButton>
+                  <InfoIcon />
+                </IconButton>
+              </Tooltip>
+            </div>
+            <div className="basis-11/12">
+              <select>
+                <option>{"Regenerativität"}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div className="mt-1">
+          <Slider
+            aria-label="Always visible"
+            value={valueRegenerativität}
+            onChange={onChangeValueRegenerativität}
+            step={1}
+            min={1}
+            max={3}
             marks={true}
             valueLabelDisplay="on"
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-8">
-        <div className="rounded-md bg-slate-200 p-16 text-center text-2xl font-semibold">
+      <div className="grid grid-cols-3 gap-8">
+        <div className="col-span-3 rounded-md bg-slate-200 p-28 text-center text-2xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile1
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
                   (elem: { name: string }) => elem.name === "T-Shirt"
@@ -141,14 +195,14 @@ const MainContent = () => {
               }
             />
           )}
-          {jacketContentVisible && (
-            <JacketComponentTile1
+          {jeansContentVisible && (
+            <JeansComponentTile1
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
-                  (elem: { name: string }) => elem.name === "Jacke"
+                  (elem: { name: string }) => elem.name === "Jeans"
                 )[0].tile1
               }
             />
@@ -158,8 +212,8 @@ const MainContent = () => {
           {shirtContentVisible && (
             <ShirtComponentTile2
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
                   (elem: { name: string }) => elem.name === "T-Shirt"
@@ -167,14 +221,14 @@ const MainContent = () => {
               }
             />
           )}
-          {jacketContentVisible && (
-            <JacketComponentTile2
+          {jeansContentVisible && (
+            <JeansComponentTile2
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
-                  (elem: { name: string }) => elem.name === "Jacke"
+                  (elem: { name: string }) => elem.name === "Jeans"
                 )[0].tile2
               }
             />
@@ -184,8 +238,8 @@ const MainContent = () => {
           {shirtContentVisible && (
             <ShirtComponentTile3
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
                   (elem: { name: string }) => elem.name === "T-Shirt"
@@ -193,14 +247,14 @@ const MainContent = () => {
               }
             />
           )}
-          {jacketContentVisible && (
-            <JacketComponentTile3
+          {jeansContentVisible && (
+            <JeansComponentTile3
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
-                  (elem: { name: string }) => elem.name === "Jacke"
+                  (elem: { name: string }) => elem.name === "Jeans"
                 )[0].tile3
               }
             />
@@ -210,8 +264,8 @@ const MainContent = () => {
           {shirtContentVisible && (
             <ShirtComponentTile4
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
                   (elem: { name: string }) => elem.name === "T-Shirt"
@@ -219,14 +273,14 @@ const MainContent = () => {
               }
             />
           )}
-          {jacketContentVisible && (
-            <JacketComponentTile4
+          {jeansContentVisible && (
+            <JeansComponentTile4
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
-              valueFestigkeit={valueFestigkeit}
-              valueStrapazierfähigkeit={valueStrapazierfähigkeit}
+              valueLanglebigkeit={valueLanglebigkeit}
+              valueRegenerativität={valueRegenerativität}
               data={
                 data.filter(
-                  (elem: { name: string }) => elem.name === "Jacke"
+                  (elem: { name: string }) => elem.name === "Jeans"
                 )[0].tile4
               }
             />
