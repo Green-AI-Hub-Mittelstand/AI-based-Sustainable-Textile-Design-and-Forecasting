@@ -3,8 +3,8 @@ import { Section } from "../layout/Section";
 
 const Main = () => (
   <Section
-    title="Example Title"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Vorschlagsystem für nachhaltiges Textildesign"
+    description="Wählen Sie Ihre Präferenzen für den ausgewählten Textiltyp."
   >
     <MainContent />
   </Section>

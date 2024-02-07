@@ -5,7 +5,7 @@ export default function ShirtComponentTile4(props: {
   valueRegenerativität: number;
 }) {
   return (
-    <div>
+    <div style={{ whiteSpace: "pre-line" }}>
       {props.valueRecyclingfähigkeit === 1 &&
       props.valueLanglebigkeit === 3 &&
       props.valueRegenerativität === 2
@@ -18,6 +18,14 @@ export default function ShirtComponentTile4(props: {
           props.valueLanglebigkeit === 4 &&
           props.valueRegenerativität === 1
         ? props.data.case3.text
+        : props.valueRecyclingfähigkeit === 1 &&
+          props.valueLanglebigkeit === 3 &&
+          props.valueRegenerativität === 1
+        ? props.data.case4.text
+        : props.valueRecyclingfähigkeit === 2 &&
+          props.valueLanglebigkeit === 4 &&
+          props.valueRegenerativität === 1
+        ? props.data.case5.text
         : props.data.standardcase.text}
     </div>
   );

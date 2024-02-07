@@ -1,5 +1,7 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import Slider from "@mui/material/Slider";
+import { IconButton, Tooltip } from "@mui/material";
+import InfoIcon from "@mui/icons-material/Info";
 import "bulma/css/bulma.min.css";
 
 import ShirtComponentTile1 from "../clothing/shirt/ShirtComponentTile1";
@@ -11,8 +13,6 @@ import JeansComponentTile1 from "../clothing/jeans/JeansComponentTile1";
 import JeansComponentTile2 from "../clothing/jeans/JeansComponentTile2";
 import JeansComponentTile3 from "../clothing/jeans/JeansComponentTile3";
 import JeansComponentTile4 from "../clothing/jeans/JeansComponentTile4";
-import { IconButton, Tooltip } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
 
 const MainContent = () => {
   var data = require("../../data/data.json");
@@ -22,9 +22,9 @@ const MainContent = () => {
     useState<boolean>(false);
   const [dropdownClothing, setDropDownClothing] = useState<string>("T-Shirt");
   const [valueRecyclingfähigkeit, setValueRecyclingfähigkeit] =
-    useState<number>(0);
-  const [valueLanglebigkeit, setValueLanglebigkeit] = useState<number>(0);
-  const [valueRegenerativität, setValueRegenerativität] = useState<number>(0);
+    useState<number>(1);
+  const [valueLanglebigkeit, setValueLanglebigkeit] = useState<number>(1);
+  const [valueRegenerativität, setValueRegenerativität] = useState<number>(1);
 
   useEffect(() => {
     dropdownClothing === "T-Shirt"
@@ -55,134 +55,136 @@ const MainContent = () => {
   };
 
   return (
-    <div className="space-y-12">
-      <div className="grid grid-cols-2 gap-8">
-        <div className="select is-fullwidth is-info">
-          <select
-            value={dropdownClothing}
-            onChange={handleOnChangeDropdownClothing}
-          >
-            <option>{"T-Shirt"}</option>
-            <option>{"Jeans"}</option>
-          </select>
-        </div>
-        <div></div>
-        <div className="select is-fullwidth">
-          <div className="flex flex-row">
-            <div className="basis-1/12">
-              <Tooltip
-                title={[
-                  "1: Um ein neues Produkt herzustellen kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
-                  <br />,
-                  "2: Um ein neues Produkt herzustellen kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
-                  <br />,
-                  "3: Ein neu hergestelltes Kleidungsstück kann zu einem hohen Anteil oder komplett aus der recycelten Faser bestehen.",
-                ]}
-                placement="left"
-              >
-                <IconButton>
-                  <InfoIcon />
-                </IconButton>
-              </Tooltip>
-            </div>
-            <div className="basis-11/12">
-              <select>
-                <option>{"Recyclingfähigkeit"}</option>
-              </select>
+    <div className="space-y-8">
+      <div className="rounded-md p-6 bg-gray-100">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="select is-fullwidth is-info">
+            <select
+              value={dropdownClothing}
+              onChange={handleOnChangeDropdownClothing}
+            >
+              <option>{"T-Shirt"}</option>
+              <option>{"Jeans"}</option>
+            </select>
+          </div>
+          <div></div>
+          <div className="select is-fullwidth">
+            <div className="flex flex-row">
+              <div className="basis-1/12">
+                <Tooltip
+                  title={[
+                    "1: Um ein neues Produkt herzustellen kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
+                    <br />,
+                    "2: Um ein neues Produkt herzustellen kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
+                    <br />,
+                    "3: Ein neu hergestelltes Kleidungsstück kann zu einem hohen Anteil oder komplett aus der recycelten Faser bestehen.",
+                  ]}
+                  placement="left"
+                >
+                  <IconButton>
+                    <InfoIcon />
+                  </IconButton>
+                </Tooltip>
+              </div>
+              <div className="basis-11/12">
+                <select>
+                  <option>{"Recyclingfähigkeit"}</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-1">
-          <Slider
-            aria-label="Always visible"
-            value={valueRecyclingfähigkeit}
-            onChange={onChangeValueRecycling}
-            step={1}
-            min={1}
-            max={3}
-            marks={true}
-            valueLabelDisplay="on"
-          />
-        </div>
-        <div className="select is-fullwidth">
-          <div className="flex flex-row">
-            <div className="basis-1/12">
-              <Tooltip
-                title={[
-                  "1: Niedrige Langlebigkeit: Die erwartete Langlebigkeit des Kleidungsstücks ist sehr kurz, d.h. das Kleidungsstück muss auch bei vorgesehener Nutzung schnell Abnutzungserscheinungen auf. Dies führt zu einem schnellen Austauschen des Produkts.",
-                  <br />,
-                  "2: Erhöhte Langlebigkeit: Das Kleidungsstück hat eine mittlere erwartete Langlebigkeit, d.h. bei vorgesehener Nutzung weist das Kleidungsstück nach einiger Zeit Abnutzungserscheinungen auf, welche zum Austauschen des Produkts führen.",
-                  <br />,
-                  "3: Hohe Langlebigkeit: Das erwartete Langlebigkeit des Kleidungsstücks ist hoch, jedoch ist zu erwarten, dass es nach vielen Jahren vorgesehener Nutzung ausgetauscht werden muss.",
-                  <br />,
-                  "4: Sehr hohe Langlebigkeit (Hält bei normalem Gebrauch ein Leben lang) Die erwartete Langlebigkeit des Kleidungsstücks ist sehr lang, da keine oder nur sehr wenige Abnutzungserscheinungen zu erwarten sind.",
-                ]}
-                placement="left"
-              >
-                <IconButton>
-                  <InfoIcon />
-                </IconButton>
-              </Tooltip>
-            </div>
-            <div className="basis-11/12">
-              <select>
-                <option>{"Langlebigkeit"}</option>
-              </select>
+          <div className="mt-1">
+            <Slider
+              aria-label="Always visible"
+              value={valueRecyclingfähigkeit}
+              onChange={onChangeValueRecycling}
+              step={1}
+              min={1}
+              max={3}
+              marks={true}
+              valueLabelDisplay="on"
+            />
+          </div>
+          <div className="select is-fullwidth">
+            <div className="flex flex-row">
+              <div className="basis-1/12">
+                <Tooltip
+                  title={[
+                    "1: Niedrige Langlebigkeit: Die erwartete Langlebigkeit des Kleidungsstücks ist sehr kurz, d.h. das Kleidungsstück muss auch bei vorgesehener Nutzung schnell Abnutzungserscheinungen auf. Dies führt zu einem schnellen Austauschen des Produkts.",
+                    <br />,
+                    "2: Erhöhte Langlebigkeit: Das Kleidungsstück hat eine mittlere erwartete Langlebigkeit, d.h. bei vorgesehener Nutzung weist das Kleidungsstück nach einiger Zeit Abnutzungserscheinungen auf, welche zum Austauschen des Produkts führen.",
+                    <br />,
+                    "3: Hohe Langlebigkeit: Das erwartete Langlebigkeit des Kleidungsstücks ist hoch, jedoch ist zu erwarten, dass es nach vielen Jahren vorgesehener Nutzung ausgetauscht werden muss.",
+                    <br />,
+                    "4: Sehr hohe Langlebigkeit (Hält bei normalem Gebrauch ein Leben lang) Die erwartete Langlebigkeit des Kleidungsstücks ist sehr lang, da keine oder nur sehr wenige Abnutzungserscheinungen zu erwarten sind.",
+                  ]}
+                  placement="left"
+                >
+                  <IconButton>
+                    <InfoIcon />
+                  </IconButton>
+                </Tooltip>
+              </div>
+              <div className="basis-11/12">
+                <select>
+                  <option>{"Langlebigkeit"}</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-1">
-          <Slider
-            aria-label="Always visible"
-            value={valueLanglebigkeit}
-            onChange={onChangeValueLanglebigkeit}
-            step={1}
-            min={1}
-            max={4}
-            marks={true}
-            valueLabelDisplay="on"
-          />
-        </div>
-        <div className="select is-fullwidth">
-          <div className="flex flex-row">
-            <div className="basis-1/12">
-              <Tooltip
-                title={[
-                  "1: Die Ressourcen, welche zur Herstellung des Kleidungsstücks genutzt wurden sind nicht regenerativ.",
-                  <br />,
-                  "2: Nur ein Teil der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden sind regenerativ.",
-                  <br />,
-                  "3: 100% der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden, sind regenerativ.",
-                ]}
-                placement="left"
-              >
-                <IconButton>
-                  <InfoIcon />
-                </IconButton>
-              </Tooltip>
-            </div>
-            <div className="basis-11/12">
-              <select>
-                <option>{"Regenerativität"}</option>
-              </select>
+          <div className="mt-1">
+            <Slider
+              aria-label="Always visible"
+              value={valueLanglebigkeit}
+              onChange={onChangeValueLanglebigkeit}
+              step={1}
+              min={1}
+              max={4}
+              marks={true}
+              valueLabelDisplay="on"
+            />
+          </div>
+          <div className="select is-fullwidth">
+            <div className="flex flex-row">
+              <div className="basis-1/12">
+                <Tooltip
+                  title={[
+                    "1: Die Ressourcen, welche zur Herstellung des Kleidungsstücks genutzt wurden sind nicht regenerativ.",
+                    <br />,
+                    "2: Nur ein Teil der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden sind regenerativ.",
+                    <br />,
+                    "3: 100% der Ressourcen, die zur Herstellung des Kleidungsstücks genutzt wurden, sind regenerativ.",
+                  ]}
+                  placement="left"
+                >
+                  <IconButton>
+                    <InfoIcon />
+                  </IconButton>
+                </Tooltip>
+              </div>
+              <div className="basis-11/12">
+                <select>
+                  <option>{"Regenerativität"}</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-1">
-          <Slider
-            aria-label="Always visible"
-            value={valueRegenerativität}
-            onChange={onChangeValueRegenerativität}
-            step={1}
-            min={1}
-            max={3}
-            marks={true}
-            valueLabelDisplay="on"
-          />
+          <div className="mt-1">
+            <Slider
+              aria-label="Always visible"
+              value={valueRegenerativität}
+              onChange={onChangeValueRegenerativität}
+              step={1}
+              min={1}
+              max={3}
+              marks={true}
+              valueLabelDisplay="on"
+            />
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-3 rounded-md bg-slate-200 p-28 text-center text-2xl font-semibold">
+        <div className="col-span-3 rounded-md bg-slate-200 py-28 p-8 text-center text-2xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile1
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
@@ -208,7 +210,7 @@ const MainContent = () => {
             />
           )}
         </div>
-        <div className="rounded-md bg-emerald-200 p-16 text-center text-2xl font-semibold">
+        <div className="rounded-md bg-emerald-200 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile2
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
@@ -234,7 +236,7 @@ const MainContent = () => {
             />
           )}
         </div>
-        <div className="rounded-md bg-rose-300 p-16 text-center text-2xl font-semibold">
+        <div className="rounded-md bg-rose-300 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile3
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
@@ -260,7 +262,7 @@ const MainContent = () => {
             />
           )}
         </div>
-        <div className="rounded-md bg-amber-200 p-16 text-center text-2xl font-semibold">
+        <div className="rounded-md bg-amber-200 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile4
               valueRecyclingfähigkeit={valueRecyclingfähigkeit}
