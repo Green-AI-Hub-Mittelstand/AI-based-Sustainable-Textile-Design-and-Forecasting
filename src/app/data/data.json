@@ -1,0 +1,116 @@
+[
+  {
+    "name": "T-Shirt",
+    "tile1": {
+      "standardcase": {
+        "condition": "-",
+        "text": "Vorgeschlagenes Material: -"
+      },
+      "case1": {
+        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 2",
+        "text": "Vorgeschlagenes Material: 100% Mischgewebe \n Vorgeschlagenes Stoffgewicht: 160g/m^2"
+      },
+      "case2": {
+        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 3",
+        "text": "Vorgeschlagenes Material: 100% Baumwolle \n Vorgeschlagenes Stoffgewicht: < 160g/m^2"
+      },
+      "case3": {
+        "condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
+        "text": "Vorgeschlagenes Material: 100% Polyester \n Vorgeschlagenes Stoffgewicht: 160g/m^2"
+      },
+      "case4": {
+        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
+        "text": "Vorgeschlagenes Material: Mischgewebe (z.B. 70% Baumwolle, 30% Polyester) \n Vorgeschlagenes Stoffgewicht: 160g/m^2"
+      },
+      "case5": {
+        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
+        "text": "Vorgeschlagenes Material: 100% Baumwolle \n Vorgeschlagenes Stoffgewicht: 250g/m^2"
+      }
+    },
+    "tile2": {
+      "standardcase": {
+        "condition": "-",
+        "text": "-"
+      },
+      "case1": {
+        "condition": "100% Mischgewebe",
+        "text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften."
+      },
+      "case2": {
+        "condition": "100% Baumwolle",
+        "text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften."
+      },
+      "case3": {
+        "condition": "100% Polyester",
+        "text": "Ein Faser-zu-Faser Recycling ist auch mehrfach zu 100% möglich."
+      },
+      "case4": {
+        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
+        "text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften."
+      },
+      "case5": {
+        "condition": "100% Baumwolle",
+        "text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften."
+      }
+    },
+    "tile3": {
+      "standardcase": {
+        "condition": "-",
+        "text": "-"
+      },
+      "case1": {
+        "condition": "100% Mischgewebe",
+        "text": "Ein Faser-zu-Faser Recycling ist nahezu unmöglich, da die Faser nur schwer getrennt können."
+      },
+      "case2": {
+        "condition": "100% Baumwolle",
+        "text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst."
+      },
+      "case3": {
+        "condition": "100% Polyester",
+        "text": "Hohe Mengen an Mikroplastik werden erzeugt."
+      },
+      "case4": {
+        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
+        "text": "Ein Faser-zu-Faser Recycling ist nahezu unmöglich, da die Faser nur schwer getrennt können."
+      },
+      "case5": {
+        "condition": "100% Baumwolle",
+        "text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst."
+      }
+    },
+    "tile4": {
+      "standardcase": {
+        "condition": "-",
+        "text": "-"
+      },
+      "case1": {
+        "condition": "100% Mischgewebe",
+        "text": "Geringe Mengen von Mikroplastik werden erzeugt."
+      },
+      "case2": {
+        "condition": "100% Baumwolle",
+        "text": "Hoher Wasserverbrauch bei der Herstellung."
+      },
+      "case3": {
+        "condition": "100% Polyester",
+        "text": "Nicht alltagstaugliches Hautgefühl."
+      },
+      "case4": {
+        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
+        "text": "Geringe Mengen von Mikroplastik werden erzeugt."
+      },
+      "case5": {
+        "condition": "100% Baumwolle",
+        "text": "Hoher Wasserverbrauch bei der Herstellung."
+      }
+    }
+  },
+  {
+    "name": "Jeans",
+    "tile1": "Jeans Tile1",
+    "tile2": "Jeans Tile2",
+    "tile3": "Jeans Tile3",
+    "tile4": "Jeans Tile4"
+  }
+]
