@@ -8,11 +8,7 @@ const Footer = () => (
   <Background color="bg-gray-100">
     <Section>
       <div className="text-center">
-        <span
-          className={
-            "inline-flex items-center text-emerald-500 gap-6 font-semibold text-xl"
-          }
-        >
+        <span className={"inline-flex items-center gap-6"}>
           <Image src={logoBMUV} alt="LogoBMUV" />
           <Image src={logoZUG} alt="LogoZUG" />
         </span>
