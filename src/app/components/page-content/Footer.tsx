@@ -1,12 +1,22 @@
 import { Background } from "../background/Background";
-import { CenteredFooter } from "../footer/CenteredFooter";
 import { Section } from "../layout/Section";
-import { Logo } from "./Logo";
+import Image from "next/image";
+import logoBMUV from "../../data/asset_logo_BMUV.svg";
+import logoZUG from "../../data/asset_logo_ZUG.svg";
 
 const Footer = () => (
   <Background color="bg-gray-100">
     <Section>
-      <CenteredFooter logo={<Logo />}></CenteredFooter>
+      <div className="text-center">
+        <span
+          className={
+            "inline-flex items-center text-emerald-500 gap-6 font-semibold text-xl"
+          }
+        >
+          <Image src={logoBMUV} alt="LogoBMUV" />
+          <Image src={logoZUG} alt="LogoZUG" />
+        </span>
+      </div>
     </Section>
   </Background>
 );
