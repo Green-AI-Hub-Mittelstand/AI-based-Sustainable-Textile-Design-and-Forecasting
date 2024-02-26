@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Background } from "../background/Background";
 import { Section } from "../layout/Section";
 import Image from "next/image";
@@ -9,8 +10,12 @@ const Footer = () => (
     <Section>
       <div className="text-center">
         <span className={"inline-flex items-center gap-6"}>
-          <Image src={logoBMUV} alt="LogoBMUV" />
-          <Image src={logoZUG} alt="LogoZUG" />
+          <Link href="https://www.bmuv.de/">
+            <Image src={logoBMUV} alt="LogoBMUV" />
+          </Link>
+          <Link href="https://www.z-u-g.org/">
+            <Image src={logoZUG} alt="LogoZUG" />
+          </Link>
         </span>
       </div>
     </Section>

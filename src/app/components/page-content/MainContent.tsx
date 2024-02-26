@@ -79,9 +79,9 @@ const MainContent = () => {
               <div className="basis-1/12">
                 <Tooltip
                   title={[
-                    "1: Um ein neues Produkt herzustellen kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
+                    "1: Um ein neues Produkt herzustellen, kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
                     <br />,
-                    "2: Um ein neues Produkt herzustellen kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
+                    "2: Um ein neues Produkt herzustellen, kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
                     <br />,
                     "3: Ein neu hergestelltes Kleidungsstück kann zu einem hohen Anteil oder komplett aus der recycelten Faser bestehen.",
                   ]}
