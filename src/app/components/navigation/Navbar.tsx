@@ -11,19 +11,15 @@ const Navbar = (props: INavbarProps) => (
       <Link href="/">{props.logo}</Link>
     </div>
     <nav>
-      <ul className="flex items-center text-xl">
+      <ul className="flex space-x-5 text-xl">
         <li>
           <Link href="/">
-            <span className="font-medium text-gray-800 mr-5">
-              {"Startseite"}
-            </span>
+            <span className="font-medium text-gray-800">{"Startseite"}</span>
           </Link>
         </li>
         <li>
           <Link href="/more-infos">
-            <span className="font-medium text-gray-800 mr-5">
-              {"Weitere Infos"}
-            </span>
+            <span className="font-medium text-gray-800">{"Weitere Infos"}</span>
           </Link>
         </li>
         <li>

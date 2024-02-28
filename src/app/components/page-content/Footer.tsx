@@ -7,7 +7,7 @@ import logoZUG from "../../data/asset_logo_ZUG.svg";
 
 const Footer = () => (
   <Background color="bg-gray-100">
-    <Section>
+    <Section yPadding="py-10">
       <div className="text-center">
         <span className={"inline-flex items-center gap-6"}>
           <Link href="https://www.bmuv.de/">
