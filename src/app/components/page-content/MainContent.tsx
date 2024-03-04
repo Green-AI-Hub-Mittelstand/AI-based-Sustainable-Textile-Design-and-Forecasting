@@ -15,7 +15,9 @@ import JeansComponentTile3 from "../clothing/jeans/JeansComponentTile3";
 import JeansComponentTile4 from "../clothing/jeans/JeansComponentTile4";
 
 const MainContent = () => {
+  // Daten aus der json-File importieren
   var data = require("../../data/data.json");
+  // Variablen für diese Komponente definieren mit useState
   const [shirtContentVisible, setShirtContentVisible] =
     useState<boolean>(false);
   const [jeansContentVisible, setJeansContentVisible] =
@@ -27,21 +29,23 @@ const MainContent = () => {
   const [valueRegenerativität, setValueRegenerativität] = useState<number>(1);
 
   useEffect(() => {
+    // Inhalte der Seite anpassen, je nachdem welches Kleidungsstück im Dropdown ausgewählt wird (siehe auch unten bei Tile 1-4)
     dropdownClothing === "T-Shirt"
       ? setShirtContentVisible(true)
       : setShirtContentVisible(false);
     dropdownClothing === "Jeans"
       ? setJeansContentVisible(true)
       : setJeansContentVisible(false);
-    console.log(data);
   }, [dropdownClothing]);
 
+  // onChange-Methode, um den aktuellen Wert des Kleidungsstücks im Dropdown zu tracken
   const handleOnChangeDropdownClothing = (
     e: ChangeEvent<HTMLSelectElement>
   ) => {
     setDropDownClothing(e.target.value);
   };
 
+  // onChange-Methoden, um immer den aktuellen Wert der Slider zu tracken
   const onChangeValueRecycling = (e: any) => {
     setValueRecyclingfähigkeit(e.target.value);
   };
@@ -58,6 +62,7 @@ const MainContent = () => {
     <div className="space-y-8">
       <div className="rounded-md p-6 bg-gray-100">
         <div className="grid grid-cols-2 gap-8">
+          {/* Dropdown Kleidungsstück */}
           <div className="select is-fullwidth is-info">
             <select
               value={dropdownClothing}
@@ -68,14 +73,15 @@ const MainContent = () => {
             </select>
           </div>
           <div></div>
+          {/* Dropdown Recyclingfähigkeit mit Tooltip */}
           <div className="select is-fullwidth">
             <div className="flex flex-row">
               <div className="basis-1/12">
                 <Tooltip
                   title={[
-                    "1: Um ein neues Produkt herzustellen kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
+                    "1: Um ein neues Produkt herzustellen, kann nur ein kleiner Anteil recycelter Faser genutzt werden, oder die Faser eignet sich nicht für ein Faser-zu-Faser Recycling.",
                     <br />,
-                    "2: Um ein neues Produkt herzustellen kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
+                    "2: Um ein neues Produkt herzustellen, kann nur ein Teil recycelter Faser bestehen, der Rest muss aus neuer Faser bestehen.",
                     <br />,
                     "3: Ein neu hergestelltes Kleidungsstück kann zu einem hohen Anteil oder komplett aus der recycelten Faser bestehen.",
                   ]}
@@ -93,6 +99,7 @@ const MainContent = () => {
               </div>
             </div>
           </div>
+          {/* Slider für Recyclingfähigkeit */}
           <div className="mt-1">
             <Slider
               aria-label="Always visible"
@@ -105,6 +112,7 @@ const MainContent = () => {
               valueLabelDisplay="on"
             />
           </div>
+          {/* Dropdown Langlebigkeit mit Tooltip */}
           <div className="select is-fullwidth">
             <div className="flex flex-row">
               <div className="basis-1/12">
@@ -132,6 +140,7 @@ const MainContent = () => {
               </div>
             </div>
           </div>
+          {/* Slider für Langlebigkeit */}
           <div className="mt-1">
             <Slider
               aria-label="Always visible"
@@ -144,6 +153,7 @@ const MainContent = () => {
               valueLabelDisplay="on"
             />
           </div>
+          {/* Dropdown Regenerativität mit Tooltip */}
           <div className="select is-fullwidth">
             <div className="flex flex-row">
               <div className="basis-1/12">
@@ -169,6 +179,7 @@ const MainContent = () => {
               </div>
             </div>
           </div>
+          {/* Slider für Regenerativität */}
           <div className="mt-1">
             <Slider
               aria-label="Always visible"
@@ -184,6 +195,7 @@ const MainContent = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-8">
+        {/* Tile 1 für das ausgewählte Kleidungsstück*/}
         <div className="col-span-3 rounded-md bg-slate-200 py-28 p-8 text-center text-2xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile1
@@ -210,6 +222,7 @@ const MainContent = () => {
             />
           )}
         </div>
+        {/* Tile 2 für das ausgewählte Kleidungsstück*/}
         <div className="rounded-md bg-emerald-200 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile2
@@ -236,6 +249,7 @@ const MainContent = () => {
             />
           )}
         </div>
+        {/* Tile 3 für das ausgewählte Kleidungsstück*/}
         <div className="rounded-md bg-rose-300 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile3
@@ -262,6 +276,7 @@ const MainContent = () => {
             />
           )}
         </div>
+        {/* Tile 4 für das ausgewählte Kleidungsstück*/}
         <div className="rounded-md bg-amber-200 py-16 px-4 text-center text-xl font-semibold">
           {shirtContentVisible && (
             <ShirtComponentTile4

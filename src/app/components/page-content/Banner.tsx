@@ -5,8 +5,8 @@ import { Logo } from "./Logo";
 
 const Banner = () => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
-      <Navbar logo={<Logo xl />}></Navbar>
+    <Section yPadding="py-10">
+      <Navbar logo={<Logo />}></Navbar>
     </Section>
     {/*     <Section yPadding="pt-20 pb-32">
       <header className="text-center">

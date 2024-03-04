@@ -1,12 +1,23 @@
+import Link from "next/link";
 import { Background } from "../background/Background";
-import { CenteredFooter } from "../footer/CenteredFooter";
 import { Section } from "../layout/Section";
-import { Logo } from "./Logo";
+import Image from "next/image";
+import logoBMUV from "../../data/asset_logo_BMUV.svg";
+import logoZUG from "../../data/asset_logo_ZUG.svg";
 
 const Footer = () => (
   <Background color="bg-gray-100">
-    <Section>
-      <CenteredFooter logo={<Logo />}></CenteredFooter>
+    <Section yPadding="py-10">
+      <div className="text-center">
+        <span className={"inline-flex items-center gap-6"}>
+          <Link href="https://www.bmuv.de/">
+            <Image src={logoBMUV} alt="LogoBMUV" />
+          </Link>
+          <Link href="https://www.z-u-g.org/">
+            <Image src={logoZUG} alt="LogoZUG" />
+          </Link>
+        </span>
+      </div>
     </Section>
   </Background>
 );

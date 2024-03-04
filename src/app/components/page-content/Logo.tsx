@@ -1,20 +1,14 @@
 import Image from "next/image";
-import logo from "../../data/logo.png";
-type ILogoProps = {
-  xl?: boolean;
-};
+import logoINTEX from "../../data/logo_INTEX.png";
 
-const Logo = (props: ILogoProps) => {
-  const size = props.xl ? "44" : "32";
-  const fontStyle = props.xl
-    ? "font-semibold text-3xl"
-    : "font-semibold text-xl";
-
+const Logo = () => {
   return (
     <span
-      className={`inline-flex items-center text-emerald-500 gap-1 ${fontStyle}`}
+      className={
+        "inline-flex items-center text-emerald-500 gap-1 font-semibold text-3xl"
+      }
     >
-      <Image src={logo} alt="GreenAI" />
+      <Image src={logoINTEX} alt="LogoINTEX" />
       {"GreenAI"}
     </span>
   );
