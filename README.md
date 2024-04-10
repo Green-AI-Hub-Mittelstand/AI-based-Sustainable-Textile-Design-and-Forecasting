@@ -134,3 +134,16 @@ For open source projects, say how it is licensed.
 ## Project status
 
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+
+
+#On server
+
+clone repo and go into its folder
+bun i
+sudo apt reinstall npm
+sudo apt reinstall node
+bun i node
+bun i next
+bun i npm
+bun dev -H 0.0.0.0
