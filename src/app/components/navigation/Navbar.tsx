@@ -18,8 +18,13 @@ const Navbar = (props: INavbarProps) => (
           </Link>
         </li>
         <li>
-          <Link href="/more-infos">
-            <span className="font-medium text-gray-800">{"Weitere Infos"}</span>
+          <Link href="/material-guide">
+            <span className="font-medium text-gray-800">{"Material Guide"}</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/user-guide">
+            <span className="font-medium text-gray-800">{"User Guide"}</span>
           </Link>
         </li>
         <li>
