@@ -265,7 +265,7 @@
 			},
 			"case3": {
 				"condition": "Mischgewebe; ",
-				"text": "Hoher Wasserverbrauch bei der Herstellung, Mikroplastik wird erzeugt"
+				"text": "Geringe Mengen von Mikroplastik werden erzeugt"
 			},
 			"case4": {
 				"condition": "Mischgewebe; ",
@@ -530,7 +530,7 @@
 			},
 			"case3": {
 				"condition": "Mischgewebe; ",
-				"text": "Hoher Wasserverbrauch bei der Herstellung, Mikroplastik wird erzeugt"
+				"text": "Geringe Mengen von Mikroplastik werden erzeugt"
 			}
 		}
 	}
