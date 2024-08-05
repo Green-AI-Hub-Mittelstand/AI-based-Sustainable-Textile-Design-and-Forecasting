@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <h1 align="center">Project Title</h1>
+  <h1 align="center">GreenAI INTEX</h1>
   
   <p align="center">
     <a href="https://github.com/Green-AI-Hub-Mittelstand/readme_template/issues">Report Bug</a>
@@ -32,7 +32,7 @@
 
 ## About The Project
 
-Supporting the resource efficiency of the textil industry
+Supporting the resource efficiency of the textile industry
 
 In this project, we aimed to support designer of textiles in choosing fabrics and compositions that last longer. 
 More information about the project can be found <a href="https://www.green-ai-hub.de/pilotprojekte/pilotprojekt-intex-gmbh">here</a>. 
