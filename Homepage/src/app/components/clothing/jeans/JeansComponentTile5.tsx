@@ -1,4 +1,4 @@
-export default function ShirtComponentTile3(props: {
+export default function JeansComponentTile5(props: {
   data: any;
   valueRecyclingfähigkeit: number;
   valueLanglebigkeit: number;
@@ -14,15 +14,11 @@ export default function ShirtComponentTile3(props: {
           props.valueLanglebigkeit <= 4 &&
           props.valueRegenerativität === 1
           ? props.data.case2.text
-          : props.valueRecyclingfähigkeit <= 2 &&
+          : props.valueRecyclingfähigkeit === 1 &&
             props.valueLanglebigkeit <= 4 &&
             props.valueRegenerativität === 0
             ? props.data.case3.text
-            : props.valueRecyclingfähigkeit === 3 &&
-              props.valueLanglebigkeit <= 4 &&
-              props.valueRegenerativität === 0
-              ? props.data.case4.text
-              : props.data.standardcase.text}
+            : props.data.standardcase.text}
     </div>
   );
 }

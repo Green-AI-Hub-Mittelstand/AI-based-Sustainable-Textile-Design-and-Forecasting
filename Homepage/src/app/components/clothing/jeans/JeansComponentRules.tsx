@@ -8,7 +8,7 @@ export default function JeansComponentTileRules(props: {
     <div style={{ whiteSpace: "pre-line" }}>
       {props.valueRecyclingfähigkeit === 1 &&
       props.valueLanglebigkeit === 1 &&
-      props.valueRegenerativität === 3
+      props.valueRegenerativität === 1
         ? props.data.case1.text
         : props.valueRecyclingfähigkeit === 1 &&
           props.valueLanglebigkeit === 2 &&

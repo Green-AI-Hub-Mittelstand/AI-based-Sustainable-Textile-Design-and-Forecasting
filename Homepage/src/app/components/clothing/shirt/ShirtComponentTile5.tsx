@@ -1,4 +1,4 @@
-export default function ShirtComponentTile3(props: {
+export default function ShirtComponentTile5(props: {
   data: any;
   valueRecyclingfähigkeit: number;
   valueLanglebigkeit: number;

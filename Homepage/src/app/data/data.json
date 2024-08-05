@@ -1,312 +1,537 @@
 [
-  {
-    "name": "T-Shirt",
-    "tile1": {
-      "standardcase": {
-        "condition": "-",
-        "text": "Vorgeschlagenes Material: -"
-      },
-      "case1": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 2",
-        "text": "Vorgeschlagenes Material: Mischgewebe, 5-30% Polyester \n Vorgeschlagenes Stoffgewicht: 160g/m²"
-      },
-      "case2": {
-        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 100% Baumwolle \n Vorgeschlagenes Stoffgewicht: < 160g/m²"
-      },
-      "case3": {
-        "condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
-        "text": "Vorgeschlagenes Material: 100% Polyester \n Vorgeschlagenes Stoffgewicht: 160g/m²"
-      },
-      "case4": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
-        "text": "Vorgeschlagenes Material: Mischgewebe (z.B. 70% Baumwolle, 30% Polyester) \n Vorgeschlagenes Stoffgewicht: 160g/m²"
-      },
-      "case5": {
-        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
-        "text": "Vorgeschlagenes Material: 100% Baumwolle \n Vorgeschlagenes Stoffgewicht: 250g/m²"
-      },
-      "case6": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: > 20% recycelte Baumwolle, Rest Baumwolle \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case7": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 5-20% recycelte Baumwolle, Rest Baumwolle \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case8": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 2",
-        "text": "Vorgeschlagenes Material: >30% Polyester \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case9": {
-        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 100% Leinen \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case10": {
-        "condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 100% Lyocell \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case11": {
-        "condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 100% Modal \n Vorgeschlagenes Stoffgewicht: -"
-      }
-    },
-    "tile2": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "Mischgewebe, 5-30% Polyester",
-        "text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften."
-      },
-      "case2": {
-        "condition": "100% Baumwolle",
-        "text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften."
-      },
-      "case3": {
-        "condition": "100% Polyester",
-        "text": "Ein Faser-zu-Faser Recycling ist auch mehrfach zu 100% möglich."
-      },
-      "case4": {
-        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
-        "text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften."
-      },
-      "case5": {
-        "condition": "100% Baumwolle",
-        "text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften."
-      },
-      "case6": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case7": {
-        "condition": "5-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case8": {
-        "condition": ">30% Polyester",
-        "text": "-"
-      },
-      "case9": {
-        "condition": "100% Leinen",
-        "text": "-"
-      },
-      "case10": {
-        "condition": "100% Lyocell",
-        "text": "-"
-      },
-      "case11": {
-        "condition": "100% Modal",
-        "text": "-"
-      }
-    },
-    "tile3": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "Mischgewebe, 5-30% Polyester",
-        "text": "Ein Faser-zu-Faser Recycling ist nahezu unmöglich, da die Faser nur schwer getrennt können."
-      },
-      "case2": {
-        "condition": "100% Baumwolle",
-        "text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst."
-      },
-      "case3": {
-        "condition": "100% Polyester",
-        "text": "Hohe Mengen an Mikroplastik werden erzeugt."
-      },
-      "case4": {
-        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
-        "text": "Ein Faser-zu-Faser Recycling ist nahezu unmöglich, da die Faser nur schwer getrennt können."
-      },
-      "case5": {
-        "condition": "100% Baumwolle",
-        "text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst."
-      },
-      "case6": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case7": {
-        "condition": "5-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case8": {
-        "condition": ">30% Polyester",
-        "text": "-"
-      },
-      "case9": {
-        "condition": "100% Leinen",
-        "text": "-"
-      },
-      "case10": {
-        "condition": "100% Lyocell",
-        "text": "-"
-      },
-      "case11": {
-        "condition": "100% Modal",
-        "text": "-"
-      }
-    },
-    "tile4": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "Mischgewebe, 5-30% Polyester",
-        "text": "Geringe Mengen von Mikroplastik werden erzeugt."
-      },
-      "case2": {
-        "condition": "100% Baumwolle",
-        "text": "Hoher Wasserverbrauch bei der Herstellung."
-      },
-      "case3": {
-        "condition": "100% Polyester",
-        "text": "Nicht alltagstaugliches Hautgefühl."
-      },
-      "case4": {
-        "condition": "100% Mischgewebe (z.B. 70% Baumwolle, 30% Polyester)",
-        "text": "Geringe Mengen von Mikroplastik werden erzeugt."
-      },
-      "case5": {
-        "condition": "100% Baumwolle",
-        "text": "Hoher Wasserverbrauch bei der Herstellung."
-      },
-      "case6": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case7": {
-        "condition": "5-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case8": {
-        "condition": ">30% Polyester",
-        "text": "-"
-      },
-      "case9": {
-        "condition": "100% Leinen",
-        "text": "-"
-      },
-      "case10": {
-        "condition": "100% Lyocell",
-        "text": "-"
-      },
-      "case11": {
-        "condition": "100% Modal",
-        "text": "-"
-      }
-    }
-  },
-  {
-    "name": "Jeans",
-    "tile1": {
-      "standardcase": {
-        "condition": "-",
-        "text": "Vorgeschlagenes Material: -"
-      },
-      "case1": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: > 20% recycelte Baumwolle, Rest Baumwolle \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case2": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 0-20% recycelte Baumwolle, Rest Baumwolle \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case3": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 2",
-        "text": "Vorgeschlagenes Material: 100% Baumwolle mit ca. 1% Elasthan und insgesamt 10% Polyester \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case4": {
-        "condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 2",
-        "text": "Vorgeschlagenes Material: Mischgewebe (> 10% Polyester & 1% Elasthan, Rest Baumwolle) \n Vorgeschlagenes Stoffgewicht: -"
-      },
-      "case5": {
-        "condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 3",
-        "text": "Vorgeschlagenes Material: 100% Baumwolle (Denim-Stoff) \n Vorgeschlagenes Stoffgewicht: -"
-      }
-    },
-    "tile2": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case2": {
-        "condition": "0-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case3": {
-        "condition": "100% Baumwolle mit ca. 1% Elasthan und insgesamt 10% Polyester",
-        "text": "-"
-      },
-      "case4": {
-        "condition": "Mischgewebe (> 10% Polyester & 1% Elasthan, Rest Baumwolle)",
-        "text": "-"
-      },
-      "case5": {
-        "condition": "100% Baumwolle (Denim-Stoff)",
-        "text": "-"
-      }
-    },
-    "tile3": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case2": {
-        "condition": "0-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case3": {
-        "condition": "100% Baumwolle mit ca. 1% Elasthan und insgesamt 10% Polyester",
-        "text": "-"
-      },
-      "case4": {
-        "condition": "Mischgewebe, > 10% Polyester & 1% Elasthan, Rest Baumwolle",
-        "text": "-"
-      },
-      "case5": {
-        "condition": "100% Baumwolle (Denim-Stoff)",
-        "text": "-"
-      }
-    },
-    "tile4": {
-      "standardcase": {
-        "condition": "-",
-        "text": "-"
-      },
-      "case1": {
-        "condition": "> 20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case2": {
-        "condition": "0-20% recycelte Baumwolle, Rest Baumwolle",
-        "text": "-"
-      },
-      "case3": {
-        "condition": "100% Baumwolle mit ca. 1% Elasthan und insgesamt 10% Polyester",
-        "text": "-"
-      },
-      "case4": {
-        "condition": "Mischgewebe, > 10% Polyester & 1% Elasthan, Rest Baumwolle",
-        "text": "-"
-      },
-      "case5": {
-        "condition": "100% Baumwolle (Denim-Stoff)",
-        "text": "-"
-      }
-    }
-  }
+	{
+		"name": "T-Shirt",
+		"fabric_header": "",
+		"tile1": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "mindestens 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case2": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case3": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case4": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case5": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "100% Baumwolle"
+			},
+			"case6": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "100% Baumwolle"
+			},
+			"case7": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "100% Baumwolle"
+			},
+			"case8": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "100% Baumwolle"
+			},
+			"case9": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "100% Viskosefaser"
+			},
+			"case10": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "100% Viskosefaser"
+			},
+			"case11": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "100% Viskosefaser"
+			},
+			"case12": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "100% Viskosefaser"
+			},
+			"case13": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case14": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case15": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case16": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "Mischgewebe:\nmindestens 30% Polyester,\nRest Baumwolle"
+			},
+			"case17": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case18": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case19": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "Mischgewebe:\n30% Polyester,\nRest Baumwolle"
+			},
+			"case20": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "Mischgewebe:\nmindestens 30% Polyester"
+			},
+			"case21": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "100% Polyester"
+			},
+			"case22": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "100% Polyester"
+			},
+			"case23": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "100% Polyester"
+			},
+			"case24": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "100% Polyester"
+			}
+		},
+		"tile2": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "135g/m²"
+			},
+			"case2": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "135g/m²"
+			},
+			"case3": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case4": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 205g/m²"
+			},
+			"case5": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "135g/m²"
+			},
+			"case6": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case7": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "mindestens 205g/m²"
+			},
+			"case8": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 205g/m²"
+			},
+			"case9": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "135g/m²"
+			},
+			"case10": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case11": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "mindestens 205g/m²"
+			},
+			"case12": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 205g/m²"
+			},
+			"case13": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "135g/m²"
+			},
+			"case14": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case15": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "mindestens 205g/m²"
+			},
+			"case16": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 205g/m²"
+			},
+			"case17": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "135g/m²"
+			},
+			"case18": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case19": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "mindestens 205g/m²"
+			},
+			"case20": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 205g/m²"
+			},
+			"case21": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "135g/m²"
+			},
+			"case22": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "135g/m²"
+			},
+			"case23": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "zwischen 135 und 205g/m²"
+			},
+			"case24": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 205g/m²"
+			}
+		},
+		"tile3": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle [(1-2,1-4,1)]",
+				"text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst"
+			},
+			"case2": {
+				"condition": "100% Viskosefaser [(3,1-4,1)]",
+				"text": "Gut geeignet für Faser-zu-Faser Recycling"
+			},
+			"case3": {
+				"condition": "Mischgewebe; [(1-2,1-4,0)]",
+				"text": "Ein Faser-zu-Faser Recycling ist sehr schwer, da die Faser nur schwer getrennt werden können"
+			},
+			"case4": {
+				"condition": "100% Polyester [(3,1-4,0)]",
+				"text": "Ein Faser-zu-Faser Recycling ist auch mehrfach zu 100% möglich"
+			}
+		},
+		"tile4": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle[(1-2,1-4,1)]",
+				"text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften"
+			},
+			"case2": {
+				"condition": "100% Viskosefaser [(3,1-4,1)]",
+				"text": "Eignet sich gut für dünne sommerliche Kleidung"
+			},
+			"case3": {
+				"condition": "Mischgewebe; ",
+				"text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften"
+			},
+			"case4": {
+				"condition": " 0-10% Polyester [(1-3,1-4,0)]",
+				"text": "Nicht alltagstaugliches Hautgefühl (schwitzig)"
+			}
+		},
+		"tile5": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle, mindestens 20% recyc. [(1-2,1-4,1)]",
+				"text": "Hoher Wasserverbrauch bei der Herstellung"
+			},
+			"case2": {
+				"condition": "100% Viskosefaser [(3,1-4,1)]",
+				"text": "Chemisch hergestellte Naturfaser aus Zellulose (z.B. Modal, Lyocell)"
+			},
+			"case3": {
+				"condition": "Mischgewebe; ",
+				"text": "Geringe Mengen von Mikroplastik werden erzeugt"
+			},
+			"case4": {
+				"condition": "Mischgewebe; ",
+				"text": "Hohe Mengen von Mikroplastik werden erzeugt"
+			}
+		}
+	},
+	{
+		"name": "Jeans",
+		"tile1": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "mindestens 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case2": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case3": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case4": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "zwischen 5 und 20% recycelte Baumwolle,\nRest Baumwolle"
+			},
+			"case5": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case6": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case7": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case8": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case9": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "Mischgewebe:\nbis zu 10% Viskosefaser,\nRest Baumwolle"
+			},
+			"case10": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "Mischgewebe:\nbis zu 10% Viskosefaser,\nRest Baumwolle"
+			},
+			"case11": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "Mischgewebe:\nbis zu 10% Viskosefaser,\nRest Baumwolle"
+			},
+			"case12": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "Mischgewebe:\nbis zu 10% Viskosefaser,\nRest Baumwolle"
+			},
+			"case13": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "Mischgewebe:\nbis zu 10% Polyester,\nRest Baumwolle"
+			},
+			"case14": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "Mischgewebe:\nbis zu 10% Polyester,\nRest Baumwolle"
+			},
+			"case15": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "Mischgewebe:\nbis zu 10% Polyester davon mind. 1% Elasthan,\nRest Baumwolle"
+			},
+			"case16": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "Mischgewebe:\nbis zu 10% Polyester davon mind. 1% Elasthan,\nRest Baumwolle"
+			},
+			"case17": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case18": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case19": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case20": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case21": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case22": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case23": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			},
+			"case24": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "100% Baumwolle (Denim-Stoff)"
+			}
+		},
+		"tile2": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "375g/m²"
+			},
+			"case2": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "375g/m²"
+			},
+			"case3": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "zwischen 375 und 450g/m²"
+			},
+			"case4": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 450g/m²"
+			},
+			"case5": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "375g/m²"
+			},
+			"case6": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "375g/m²"
+			},
+			"case7": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "zwischen 375 und 450g/m²"
+			},
+			"case8": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 450g/m²"
+			},
+			"case9": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 1",
+				"text": "375g/m²"
+			},
+			"case10": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 1",
+				"text": "zwischen 375 und 450g/m²"
+			},
+			"case11": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 1",
+				"text": "mindestens 450g/m²"
+			},
+			"case12": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 1",
+				"text": "mindestens 450g/m²"
+			},
+			"case13": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case14": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "mindestens 375g/m²"
+			},
+			"case15": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case16": {
+				"condition": "Recyclingfähigkeit = 1, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 375g/m²"
+			},
+			"case17": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case18": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case19": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "zwischen 375 und 450g/m²"
+			},
+			"case20": {
+				"condition": "Recyclingfähigkeit = 2, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 450g/m²"
+			},
+			"case21": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 1, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case22": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 2, Regenerativität = 0",
+				"text": "375g/m²"
+			},
+			"case23": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 3, Regenerativität = 0",
+				"text": "zwischen 375 und 450g/m²"
+			},
+			"case24": {
+				"condition": "Recyclingfähigkeit = 3, Langlebigkeit = 4, Regenerativität = 0",
+				"text": "mindestens 450g/m²"
+			}
+		},
+		"tile3": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle, mindestens 20% recyc. [(1-2,1-4,1)]",
+				"text": "Kann schlecht für ein Faser-zu-Faser Recycling genutzt werden, da die Fasern durch das Recycling verkürzt werden, was die Langlebigkeit stark beeinflusst"
+			},
+			"case2": {
+				"condition": "Mischgewebe; [(3,1-4,1)]",
+				"text": "Ein Faser-zu-Faser Recycling ist sehr schwer, da die Faser nur schwer getrennt werden können"
+			},
+			"case3": {
+				"condition": "0-10% Polyester [(1-3,1-4,0)]",
+				"text": "Ein Faser-zu-Faser Recycling ist sehr schwer, da die Faser nur schwer getrennt werden können"
+			}
+		},
+		"tile4": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle, mindestens 20% recyc. [(1-2,1-4,1)]",
+				"text": "Bietet ein sehr angenehmes Hautgefühl und hat sehr gute Thermodynamische Eigenschaften"
+			},
+			"case2": {
+				"condition": "Mischgewebe; ",
+				"text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften"
+			},
+			"case3": {
+				"condition": " 0-10% Polyester [(1-3,1-4,0)]",
+				"text": "Bietet ein angenehmes Hautgefühl und hat gute Thermodynamische Eigenschaften"
+			}
+		},
+		"tile5": {
+			"standardcase": {
+				"condition": "-",
+				"text": "-"
+			},
+			"case1": {
+				"condition": "100 %Baumwolle, mindestens 20% recyc. [(1-2,1-4,1)]",
+				"text": "Hoher Wasserverbrauch bei der Herstellung"
+			},
+			"case2": {
+				"condition": "Mischgewebe; ",
+				"text": "Hoher Wasserverbrauch bei der Herstellung"
+			},
+			"case3": {
+				"condition": "Mischgewebe; ",
+				"text": "Geringe Mengen von Mikroplastik werden erzeugt"
+			}
+		}
+	}
 ]

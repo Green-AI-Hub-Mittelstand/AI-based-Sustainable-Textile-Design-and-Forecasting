@@ -7,8 +7,8 @@ export default function ShirtComponentTileRules(props: {
   return (
     <div style={{ whiteSpace: "pre-line" }}>
       {props.valueRecyclingfähigkeit === 1 &&
-      props.valueLanglebigkeit === 3 &&
-      props.valueRegenerativität === 2
+      props.valueLanglebigkeit === 1 &&
+      props.valueRegenerativität === 0
         ? props.data.case1.text
         : props.valueRecyclingfähigkeit === 2 &&
           props.valueLanglebigkeit === 1 &&
