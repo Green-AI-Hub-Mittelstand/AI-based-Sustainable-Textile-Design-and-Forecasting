@@ -73,24 +73,25 @@ Clone this repository, navigate with your terminal into this repository and exec
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-  ```sh
-  pip install -r requirements.txt
-  ```
+Use Ubuntu or an Ubuntu based Distro as OS, as we just tested on such.
 
 ### Installation
 
-To use the environment, you have to install this repository as a pip package. Alternativly you can open a branch of this repository and implement changes directly in this repo.
-
-1. Navigate to the repository with your terminal.
-2. Install the repository as a pip package
-   ```sh
-   pip install .
-   ```
-3. Check whether the installation was successful
+cd Homepage
+npm i node.js nopt node npm next
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Startup
+
+npm run dev
+
+to run it on a server you need to first install screen then execute
+
+screen bun dev -H 0.0.0.0
+
+then do
+ctr + a, ctr + d
 
 ## Usage
 
