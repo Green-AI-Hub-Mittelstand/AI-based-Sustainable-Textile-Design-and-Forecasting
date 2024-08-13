@@ -88,7 +88,7 @@ npm run dev
 
 to run it on a server you need to first install screen then execute
 
-screen bun dev -H 0.0.0.0
+screen npm dev -H 0.0.0.0
 
 then do
 ctr + a, ctr + d
