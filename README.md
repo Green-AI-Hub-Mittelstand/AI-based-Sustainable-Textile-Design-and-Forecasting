@@ -77,18 +77,28 @@ Use Ubuntu or an Ubuntu based Distro as OS, as we just tested on such.
 
 ### Installation
 
+```sh
 cd Homepage
+```
+
+```sh
 npm i node.js nopt node npm next
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Startup
 
+```sh
 npm run dev
+```
 
+###Run on Server
 to run it on a server you need to first install screen then execute
 
+```sh
 screen npm dev -H 0.0.0.0
+```
 
 then do
 ctr + a, ctr + d
