@@ -1,0 +1,14 @@
+[
+	{
+		"header": "Baumwolle",
+		"content": "Bei Baumwolle handelt es sich um eine natürlich vorkommende, regenerative Faser. Sie bietet den Vorteil eines angenehmen Hautgefühl und guter Thermodynamischer Eigenschaften. Jedoch zeigen sich auch Schwächen im Bereich Recycling und Strapazierfähigkeit. Im Vergleich zu Polyester, aber auch Viskose, ist Baumwolle nicht sehr strapazierfähig, was die Langlebigkeit der Textilien negativ beeinflusst. Zudem ist ein Faserrecycling nur in geringem Maße möglich, da die Fasern bei jedem Recyclingvorgang verkürzt werden und zu kurze Faser zu einer noch schlechteren Strapazierfähigkeit des Stoffes führen."
+	},
+	{
+		"header": "Viskosefaser",
+		"content": "Hierbei handelt es sich um eine regenerative Chemiefaser, die Basis meist aus Holz gewonnener Zellulose hergestellt wird. Die Herstellung aus Zellulose bietet den Vorteil, dass ein Faser-zu-Faser Recycling gut möglich ist, auch wenn es heutzutage noch nicht viel genutzt wird. Zudem weisen Viskosefasern eine starke Strapazierbarkeit auf, welche jedoch geringer als die Strapazierfähigkeit von Polyester. Ähnlich wie Baumwollstoff haben Viskosefasern gute Thermodynamische Eigenschaften, bieten ein angenehmes Hautgefühl und sind außerdem auf Grund ihrer seidenartigen Optik gut für den Sommer geeignet."
+	},
+	{
+		"header": "Polyester",
+		"content": "Bei Polyester handelt es sich um eine synthetische Chemiefaser aus nicht regenerativen Stoffen wie Erdöl, wobei auch die Faser an sich nicht natürlich abbaubar ist. Ein Vorteil gegenüber den natürlichen Fasern ist die starke Strapazierfähigkeit, welche eine hohe Langlebigkeit des Kleidungsstücks garantiert. Ein anderer Vorzug ist die theoretische Möglichkeit Polyesterfasern unendlich oft zu recyceln. Ein Nachteil von Polyester ist das vergleichsweise schlechte Hautgefühl und schlechten thermodynamischen Eigenschaften, welche auch zu einer starken Geruchsentwicklung führen können."
+	}
+]
