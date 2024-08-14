@@ -105,7 +105,7 @@ ctr + a, ctr + d
 
 ## Usage
 
-More information about the project, repository structure, features, screenshots
+You can install the hompage using the installation description above or find additional information in the folder 'information'
 
 
 ## Contributing
